@@ -4,17 +4,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="color-scheme" content="light dark" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.indigo.min.css"/>
+    <meta name="theme-color" content="#2a3140" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.pumpkin.min.css"/>
     <!--link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.colors.min.css"/-->
     <title>LLMxHPC workshop</title>
     <!--style>
-        body {
-          background-color: red;  /* Replace "red" with your desired color */
-        }
-      </style-->
+      header {z-index:2;position:sticky;top:0;-webkit-backdrop-filter:blur(1rem);backdrop-filter:blur(1rem);background-color:var(--pico-header-background);transition:border-top-color .4s ease-in-out,box-shadow .4s ease-in-out}
+      body>header {z-index:2;position:sticky;top:0;-webkit-backdrop-filter:blur(1rem);backdrop-filter:blur(1rem);background-color:var(--pico-header-background);transition:border-top-color .4s ease-in-out,box-shadow .4s ease-in-out}
+      body>header.is-fixed{border-bottom-color:var(--pico-header-border-color);box-shadow:var(--pico-card-box-shadow)}
+      html{overflow-x:hidden;scroll-behavior:smooth}
+      html body{display:grid;grid-template-rows:auto 1fr auto;align-items:start;min-height:100vh}
+    </style-->
   </head>
   <body>
-    <header class="is-fixed-above-lg">
+    <header>
       <div class="container">
       <nav>
         <ul>
@@ -117,8 +120,8 @@
         </p>
         <p>
          The use of AI systems for editing and grammar enhancement is common practice and, as such, is generally outside the intent of the above policy. In this case, disclosure as noted above is recommended.
-
         </p>
+        <hr>
         <a href="https://urldefense.us/v3/__https://conferences.ieeeauthorcenter.ieee.org/author-ethics/guidelines-and-policies/submission-policies/__;!!G_uCfscf7eWS!feqQDA5a9Bp-d5SqJCczpWgvWToOkazn0KfqTyE0O6t5XEof0lwuE4k6fa1C_-TOl7VZjiGcLX1K0xe6Tw-nAxvV$">Full IEEE submission policies and paper templates can be found here. </a>
 
         <p>Submit your papers <a href="https://easychair.org/conferences/?conf=llmxhpc2024">here</a></p>
@@ -129,14 +132,23 @@
         <h2>Program</h2>
           TBA
           <a id="org"></a>
-          <h2>Organizers</h2>
+         <h2>Organizers</h2>
           <ul>
             <li>Kevin A. Brown (Argonne National Laboratory)</li>
             <li>Tanwi Mallick (Argonne National Laboratory)</li>
             <li>Juliane Mueller (National Renewable Energy Laboratory)</li>
             <li><a class="contrast" href="https://blackbird.pw/">Aleksandr Drozd</a> (RIKEN Center for Computational Science)</li>
           </ul>
-          <h2>Program Committee</h2>
+          <h3>Steering Committee</h3>
+          <ul>
+            <li>Satoshi Matsuoka</li>
+            <li>Ian Foster</li>
+            <li>Abhinav Bhatele</li>
+            <li>Tanwi Mallick</li>
+          </ul>
+
+
+          <h3>Program Committee</h3>
           TBA
     </main>
   </body>
